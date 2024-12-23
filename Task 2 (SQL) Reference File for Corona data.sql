@@ -28,7 +28,7 @@ FROM public.coronavirus_data
 --There are 78386 rows.
 
 -- Q4. Check what is start_date and end_date
---I discovered that the Date Column is text type. So i decided to convert it:
+--I noticed that the Date Column is text type. So I decided to convert it:
 --Converting the string-formatted date column to DATE type
 -- Step 1: Add a new DATE column
 ALTER TABLE public.coronavirus_data
