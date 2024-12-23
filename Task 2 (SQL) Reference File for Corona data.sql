@@ -16,12 +16,12 @@ FROM public.coronavirus_data
 -- COUNT("Province") counts all rows where Province is not null.
 -- COUNT(*)-COUNT("Province"): This gives the count of null values by subtracting
 --  the count of non-null values from the total count.
--- The same logic aapllies to all the other columns.
+-- The same logic apllies to all the other columns.
 
 --Q2. If NULL values are present, update them with zeros for all columns.
 --There are no null values.
 
--- Q3. check total number of rows
+-- Q3. Check total number of rows
 SELECT COUNT(*) AS total_no_of_rows
 FROM public.coronavirus_data
 
@@ -52,7 +52,7 @@ FROM public.coronavirus_data
 
 --The Start_Date: 2020-01-22 and the End_Date: 2021-06-13
 
--- Q5. Number of month present in dataset
+-- Q5. Number of months present in dataset
 SELECT COUNT(DISTINCT DATE_TRUNC('month', date)) AS number_of_months
 FROM public.coronavirus_data
 
